@@ -1,0 +1,189 @@
+@font-face {
+  font-family: Vazir;
+  src: url(Vazir-FD.woff) format("woff");
+}
+
+* {
+  font-size: 100%;
+  font-weight: 700;
+  font-family: Vazir;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  margin: 0px;
+  padding: 0px;
+  background: url('../img/1.png') 50% fixed;
+  background-size: cover;
+}
+
+#header-titel {
+  width: 70%;
+  margin: 15% auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+h1:hover {
+  text-shadow: 0.8px 0.4px #000;
+}
+
+#section1 {
+  width: 90%;
+  margin: 4% auto;
+  height: 45px;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 75%;
+  padding: 8px 15px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 0px 30px 30px 0px;
+}
+
+button {
+  width: 22%;
+  height: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: #03a9f4;
+  position: relative;
+  left: 5px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  border-radius: 30px 0px 0px 30px;
+}
+
+#spa {
+  font-size: 1rem;
+  color: black;
+  width: 30%;
+  display: block;
+  margin: 15px auto;
+  background-color: #f3d528;
+  border-radius: 50px;
+  text-align: center;
+}
+
+#section2 {
+  width: 90%;
+  margin: 25% auto;
+}
+
+p {
+  text-align: center;
+  color: rgb(71, 71, 71);
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  margin: 13px auto;
+  display: inline-block;
+  background-color: #fff;
+  width: 10%;
+  height: 5%;
+  border: 2px solid #007bff;
+  color: #007bff;
+  border-radius: 15px;
+}
+
+a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#pageostad {
+  background-color: red;
+  color: white;
+  border: none;
+  width: 50%;
+  height: 10%;
+  display: block;
+  margin: 2% auto;
+  padding: 8px 0px;
+  border-radius: 30px;
+  animation: pageostad 60s;
+}
+
+@keyframes pageostad {
+  0% {
+    background-color: red;
+  }
+
+  10% {
+    background-color: #d8284e;
+  }
+
+  20% {
+    background-color: #32cd32;
+  }
+
+  30% {
+    background-color: #00FFFF;
+  }
+
+  40% {
+    background-color: #FF00FF;
+  }
+
+  50% {
+    background-color: #00FA9A;
+  }
+
+  60% {
+    background-color: #6A5ACD;
+  }
+
+  70% {
+    background-color: #FFFAF0;
+  }
+
+  80% {
+    background-color: #FFA07A;
+  }
+
+  90% {
+    background-color: #7FFF00;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
+
+@media (max-width: 36em) {
+  h1 {
+    font-size: 1.35rem;
+  }
+
+  a {
+    width: 30%;
+    height: 7%;
+  }
+
+  #pageostad {
+    margin: 40% auto;
+  }
+
+  #section1 {
+    margin: 35% auto;
+  }
+
+  #spa {
+    font-size: 0.8rem;
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+    border-radius: 80px;
+  }
+}

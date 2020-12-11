@@ -66,9 +66,9 @@ button {
 #spa {
   font-size: 1rem;
   color: black;
-  width: 30%;
+  width: 90%;
   display: block;
-  margin: 15px auto;
+  margin: 7% auto;
   background-color: #f3d528;
   border-radius: 50px;
   text-align: center;
@@ -112,7 +112,7 @@ a:hover {
   margin: 2% auto;
   padding: 8px 0px;
   border-radius: 30px;
-  animation: pageostad 60s;
+  animation: pageostad 20s;
 }
 
 @keyframes pageostad {
@@ -181,7 +181,7 @@ a:hover {
 
   #spa {
     font-size: 0.8rem;
-    width: 50%;
+    width: 95%;
     display: block;
     margin: 15px auto;
     border-radius: 80px;

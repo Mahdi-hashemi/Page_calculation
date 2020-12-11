@@ -530,10 +530,13 @@ const StudentsNames = [
     ]
 ]
 
-let vasels;
-let iop;
 
 document.querySelector("#search-name").addEventListener("click", () => {
+    let vasels;
+    let iop;
+    let section = document.querySelector('#section2');
+    section.innerHTML = ``;
+    section.style.padding = `0px`;
     let spa = document.querySelector("#spa");
     spa.innerHTML = ``;
     spa.style.padding = `0px`;
@@ -580,7 +583,6 @@ document.querySelector("#search-name").addEventListener("click", () => {
         if (pimane === 0) {
             pimane = 11;
         };
-        let section = document.querySelector('#section2');
         section.style.padding = `10px`;
         section.innerHTML = `    <p>
         ${shorad}  برای تکلیف دوم برو به این <a href="http://www.cs.rpi.edu/~moorthy/Courses/S04/modcomp/">صفحه</a> پاور فصل ${pimane} رو دانلود کن و ارائه  شفاهی بده 

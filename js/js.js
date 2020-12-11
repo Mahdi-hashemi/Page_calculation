@@ -3,7 +3,7 @@ const StudentsNames = [
             name: 'زهرا احمدی',
             shomare: 1
         }, {
-            name: 'زهرا احمدی پردستی',
+            name: 'خانم احمدی پردستی',
             shomare: 2
         }, {
             name: 'احمد ارمغان',
@@ -330,7 +330,7 @@ const StudentsNames = [
             name: 'سحر ریحانی',
             shomare: 29
         }, {
-            name: 'سحر ریحانی ناراب',
+            name: 'خانم ریحانی ناراب',
             shomare: 30
         },
         {
@@ -543,10 +543,21 @@ document.querySelector("#search-name").addEventListener("click", () => {
         spa.style.padding = `9px`;
         return false;
     } else {
-        if (shorad === 'زهرا احمدی' || shorad === 'سحر ریحانی') {
-            spa.innerHTML = `اگه شما پیشوند یا پسوند داری وارد کن`;
-            spa.style.padding = `9px`;
-            // return false;
+        if (shorad === 'زهرا احمدی') {
+            let namereal1 = prompt("1-احمدی  2-احمدی پردستی عدد رو وارد کن");
+            if (namereal1 === '1') {
+                shorad = 'زهرا احمدی';
+            } else {
+                shorad = 'خانم احمدی پردستی';
+            };
+        }
+        if (shorad === 'سحر ریحانی') {
+            let namereal2 = prompt("1-ریحانی  2-ریحانی ناراب عدد رو وارد کن");
+            if (namereal2 === '1') {
+                shorad = 'سحر ریحانی';
+            } else {
+                shorad = 'خانم ریحانی ناراب';
+            };
         }
         for (let i = 0; i < StudentsNames.length; i++) {
             StudentsNames[i].filter((item) => {

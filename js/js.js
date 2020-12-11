@@ -544,16 +544,16 @@ document.querySelector("#search-name").addEventListener("click", () => {
         return false;
     } else {
         if (shorad === 'زهرا احمدی') {
-            let namereal1 = prompt("1-احمدی  2-احمدی پردستی عدد رو وارد کن");
-            if (namereal1 === '1') {
+            let namereal1 = prompt("اگه احمدی پردستی هستی بنویس  *یک* در غیر اینصورت بنویس *دو*  ");
+            if (namereal1 === 'دو') {
                 shorad = 'زهرا احمدی';
             } else {
                 shorad = 'خانم احمدی پردستی';
             };
         }
         if (shorad === 'سحر ریحانی') {
-            let namereal2 = prompt("1-ریحانی  2-ریحانی ناراب عدد رو وارد کن");
-            if (namereal2 === '1') {
+            let namereal2 = prompt("اگه ریحانی ناراب هستی بنویس  *یک* در غیر اینصورت بنویس *دو*");
+            if (namereal2 === 'دو') {
                 shorad = 'سحر ریحانی';
             } else {
                 shorad = 'خانم ریحانی ناراب';
